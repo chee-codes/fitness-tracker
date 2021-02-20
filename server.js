@@ -12,6 +12,8 @@ app.use(express.json());
 
 app.use(express.static("public"));
 
+app.use(require("./routes/html"));
+
 app.listen(PORT, () => {
   console.log("App listening on http://localhost:3000");
 });
