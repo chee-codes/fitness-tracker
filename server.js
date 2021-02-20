@@ -15,7 +15,10 @@ app.use(express.static("public"));
 app.use(require("./routes/html"));
 app.use(require("./routes/api"));
 
-mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/workout");
+mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/workout", {
+  useNewUrlParser: true,
+  useFindAndModify: false,
+});
 
 app.listen(PORT, () => {
   console.log("App listening on http://localhost:3000");
