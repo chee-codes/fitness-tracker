@@ -4,8 +4,7 @@
 
 The fitness tracker app allows users the ability to create a new workout or continue a previous one. The user can add exercises to the pre-existing workout or start a new workout with new exercises. Using the dashboard users can view workout analytics via charts over a 7 day period.
 
-![Image_1]()
-![Image_2]()
+![Image_1](/images/fit-track-home.png)
 
 ## Getting Started
 
@@ -32,6 +31,8 @@ The fitness tracker app allows users the ability to create a new workout or cont
 ```javaScript
 
 ```
+
+![Image_2](/images/fit-track-dash.png)
 
 ## Deployed Link
 
