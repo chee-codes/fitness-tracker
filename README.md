@@ -4,6 +4,9 @@
 
 The fitness tracker app allows users the ability to create a new workout or continue a previous one. The user can add exercises to the pre-existing workout or start a new workout with new exercises. Using the dashboard users can view workout analytics via charts over a 7 day period.
 
+![Image_1]()
+![Image_2]()
+
 ## Getting Started
 
 1. Clone repository to local directory.
@@ -19,6 +22,16 @@ The fitness tracker app allows users the ability to create a new workout or cont
 - [Express](https://expressjs.com/)
 - [Mongoose](https://mongoosejs.com/)
 - [MongoDB](https://www.mongodb.com/3)
+
+##Code Snippet
+
+```javaScript
+
+```
+
+```javaScript
+
+```
 
 ## Deployed Link
 
