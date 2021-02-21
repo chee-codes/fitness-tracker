@@ -24,11 +24,50 @@ The fitness tracker app allows users the ability to create a new workout or cont
 
 ##Code Snippet
 
+Using the MongoDB aggregate function to add up all the exercise durations and return the total duration.
+
 ```javaScript
+
+router.get("/api/workouts", (req, res) => {
+  Workout.aggregate([
+    { $addFields: { totalDuration: { $sum: "$exercises.duration" } } },
+  ])
+    .then((data) => res.json(data))
+    .catch((err) => res.json(err));
+});
 
 ```
 
+Mongoose Schema model
+
 ```javaScript
+
+const Schema = mongoose.Schema;
+
+const WorkoutSchema = new Schema({
+  day: {
+    type: Date,
+    default: Date.now(),
+  },
+  exercises: [
+    {
+      type: {
+        type: String,
+        trim: true,
+        required: "Enter a type of workout",
+      },
+      name: {
+        type: String,
+        trim: true,
+        required: "Enter the name of the workout",
+      },
+      duration: {
+        type: Number,
+        required: "Enter duration of workout in minutes",
+      },
+      weight: {
+        type: Number,
+      },
 
 ```
 
