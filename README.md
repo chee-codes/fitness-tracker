@@ -68,7 +68,7 @@ const WorkoutSchema = new Schema({
       weight: {
         type: Number,
       },
-
+  ]
 ```
 
 ![Image_2](/images/fit-track-dash.png)
@@ -80,6 +80,6 @@ const WorkoutSchema = new Schema({
 ## Authors
 
 - **Jaja Brown**
-  - [Portfolio](https://jbrown827.github.io/portfolio/)
-  - [GitHub](https://github.com/jbrown827)
-  - [LinkedIn](https://www.linkedin.com/in/jaja-brown-a42261201)
+  - [Portfolio](https://chee-codes.github.io/portfolio/)
+  - [GitHub](https://github.com/chee-codes)
+  - [LinkedIn](https://www.linkedin.com/in/jaja-b-a42261201/)
